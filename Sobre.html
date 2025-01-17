@@ -1,0 +1,160 @@
+<html lang="pt-BR"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina portifolio LiveStream</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(40, 33, 32);
+                color: rgb(241, 241, 241);
+                font-size: 16px;
+                height: 10000px;
+            }
+
+            header {
+                background-color: rgb(110, 86, 227);
+                padding: 1em 0;
+                text-align: center;
+                margin-top: 60px;
+                position: relative;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2rem;
+            }
+
+            .font-toggle {
+                position: absolute;
+                top: 50%;
+                right: 1em;
+                transform: translateY(-50%);
+                background-color: #1DB954;
+                border: none;
+                color: #FFFFFF;
+                padding: 0.5em 1em;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            nav {
+                background-color: rgb(110, 86, 227);
+                padding: 0.5em 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 50px;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 1em;
+            }
+
+            nav ul li a:hover {
+                background-color: #1DB954;
+                font-weight: bold;
+                border-radius: 40px;
+            }
+
+            .container {
+                padding: 2em;
+                text-align: center;
+            }
+
+            .container h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1em;
+            }
+
+            footer {
+                background-color: rgb(40, 33, 32);
+                padding: 1em 0;
+                text-align: center;
+                margin-top: 2em;
+                position: fixed;
+                bottom: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+
+            .contact {
+                background-color: #222222;
+                padding: 1.5em;
+                margin-top: 2em;
+                border-radius: 5px;
+                display: inline-block;
+                color: rgb(241, 241, 241);
+            }
+
+            .contact h3 {
+                margin-top: 0;
+            }
+
+            .contact a {
+                color: #1DB954;
+                text-decoration: none;
+            }
+
+            .contact a:hover {
+                text-decoration: underline;
+            }
+
+            h1,h2,h3{
+                font-size: 48px;
+            }
+            p{
+                font-size: 36px;
+            }
+            a{
+                font-size: 36px;
+                text-decoration: none;
+                transition: color 0.3s;
+                color: rgb(241, 241, 241);
+            }
+            li{
+                text-align: center;
+            }
+        </style>       
+    </head>
+    <body>
+        <header>
+            <h1>Bem-vindo a Sonus!</h1>
+            <button class="font-toggle" onclick="toggleFontSize()">Acessibilidade</button>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="SitePortifolio.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="sobre" class="container">
+            <h2>Sobre</h2>
+            <p>Este é o lugar onde compartilhamos nossa paixão por jogos, tecnologia e interatividade.</p>
+        </div>
+        <footer>
+            <p>&copy; 2025 Joaquim Ramos. Todos os direitos reservados.</p>
+        </footer>
+        
+    </body>
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+</html>
