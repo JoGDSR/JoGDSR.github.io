@@ -12,9 +12,16 @@ body {
     padding: 0;
     background-color: var(--main-bg-color);
     color: var(--text-color);
-    font-size: var(--font-size);
+    font-size: 1.5em;
     line-height: 1.6;
     
+}
+
+.conteinerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100%
 }
 
 header {
@@ -61,7 +68,7 @@ nav ul li {
     margin: 0 1em;
 }
 
-nav ul li a {
+.nav-link{
     text-decoration: none;
     color: var(--text-color);
     font-size: 1em;
@@ -212,13 +219,22 @@ span:hover {
         padding: 0.5em;
     }
 
-    .navbar-toggler-icon {
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-toggler {
         
         position: fixed;
         top: 0;
         width: 10%;
         height: 3em;
+        border : none;
         z-index: 1000;
+    }
+
+    .backgroundNav {
+        background-color: var(--secondary-bg-color);
     }
 
     nav ul li a {
