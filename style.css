@@ -193,6 +193,28 @@ iframe {
     transform: translate(-50%, -50%);
 }
 
+.card {
+    background-color: var(--main-bg-color);
+}
+
+.card-body {
+    color: var(--text-color);
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.card-body a {
+    color: var(--secondary-bg-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+    color: #1DB954;
+}
+
 span:hover {
     color: var(--accent-color);
     background-color: var(--accent-color);
