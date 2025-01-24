@@ -217,10 +217,7 @@ span:hover {
 
     header {
         padding: 0.5em;
-    }
-
-    .navbar-toggler:focus {
-        outline: none;
+        top: 4em;
     }
 
     .navbar-toggler {
@@ -229,7 +226,7 @@ span:hover {
         top: 0;
         width: 10%;
         height: 3em;
-        border : none;
+        border: none;
         z-index: 1000;
     }
 
