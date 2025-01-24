@@ -1,0 +1,248 @@
+:root {
+    --main-bg-color: rgb(40, 33, 32);
+    --secondary-bg-color: rgb(110, 86, 227);
+    --accent-color: #1DB954;
+    --text-color: rgb(241, 241, 241);
+    --font-size: 1.5em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: var(--secondary-bg-color);
+    padding: 1em 0;
+    position: relative;
+    top: 3.5em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logoSemFundo {
+    position: fixed;
+    top: -0.5em;
+    width: 8em;
+    height: 10em;
+    z-index: 1001;
+}
+
+.navbar {
+    background-color: var(--secondary-bg-color);
+    padding: 0.5em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.5em;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.container {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.container p,
+.container li {
+    font-size: 1em;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact {
+    background-color: #222222;
+    padding: 1.5em;
+    margin: 2em auto;
+    border-radius: 0.5em;
+    color: var(--text-color);
+    max-width: 50em;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+:focus {
+    outline: 2px dashed var(--accent-color);
+    outline-offset: 4px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%; 
+  }
+  
+.desktop-iframe {
+    display: block;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+  
+.mobile-iframe {
+    display: none;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span:hover {
+    color: var(--accent-color);
+    background-color: var(--accent-color);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .desktop-iframe {
+      display: none;
+    }
+    .mobile-iframe {
+      display: block;
+    }
+    .logoSemFundo {
+        display: none;
+    }
+    body {
+        font-size: 1em;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    .navbar-toggler-icon {
+        
+        position: fixed;
+        top: 0;
+        width: 10%;
+        height: 3em;
+        z-index: 1000;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 2em 1em;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+  }
